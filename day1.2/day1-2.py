@@ -5,7 +5,7 @@ with open("Day1Data.txt") as fd:
 i = 3
 c = 0
 while i < len(lines):
-    if (int(lines[i]) + int(lines[i - 1]) + int(lines[i - 2])) > (int(lines[i - 3]) + int(lines[i - 2]) + int(lines[i - 1])):
+    if int(lines[i])  > int(lines[i - 3]):
             c = c + 1
     i = i + 1
 print(c)
